@@ -1,6 +1,6 @@
-# Brain tumour MRI classifier (GDG DevFest Ireland workshop)
+# Brain tumour MRI classifier (GDG DevFest Ireland 2027 workshop)
 
-This is the notebook from the workshop I'm running at GDG DevFest Ireland. Attendees build an image classifier in Google Colab using transfer learning on MobileNetV3Large with TensorFlow and Keras. It sorts brain MRI scans into the three classes in the dataset's brain folder: glioma, meningioma and a class labelled `brain_tumor`. The notebook then looks at the results with a confusion matrix, sample predictions and a Grad-CAM heatmap.
+This is the notebook from the workshop I'm running at GDG DevFest Ireland 2027. Attendees build an image classifier in Google Colab using transfer learning on MobileNetV3Large with TensorFlow and Keras. It sorts brain MRI scans into the three classes in the dataset's brain folder: glioma, meningioma and a class labelled `brain_tumor`. The notebook then looks at the results with a confusion matrix, sample predictions and a Grad-CAM heatmap.
 
 This project is not a medical tool. It was written for teaching and must not be used to diagnose anyone or to make any healthcare decision.
 
@@ -49,9 +49,3 @@ Turn on a GPU before running anything: Runtime > Change runtime type, choose a G
 ```python
 import tensorflow as tf
 print(tf.config.list_physical_devices('GPU'))
-Then run the cells from top to bottom with Shift+Enter. The dataset download takes a couple of minutes, and each training epoch took 30 to 45 seconds on the GPU in my run. The notebook uses TensorFlow, Keras, kagglehub, NumPy, Matplotlib, seaborn, scikit-learn and OpenCV, which are all available in Colab.
-
-Limitations
-The same 3,000 validation images are used to monitor training and to report the final accuracy, so there is no separate held-out test set. The model is trained for only 2 epochs to fit the workshop time slot (a code comment still says 10). The notebook cannot tell a healthy scan from a tumour, because every class in this part of the dataset is a type of tumour.
-
-Presented by Lewis Shearer (LinkedIn).
