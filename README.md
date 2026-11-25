@@ -1,6 +1,6 @@
-# Brain tumour MRI classifier (GDG DevFest Ireland 2027 workshop)
+# Brain tumour MRI classifier (GDG DevFest Ireland 2026 workshop)
 
-This is the notebook from the workshop I'm running at GDG DevFest Ireland 2027. Attendees build an image classifier in Google Colab using transfer learning on MobileNetV3Large with TensorFlow and Keras. It sorts brain MRI scans into the three classes in the dataset's brain folder: glioma, meningioma and a class labelled `brain_tumor`. The notebook then looks at the results with a confusion matrix, sample predictions and a Grad-CAM heatmap.
+This is the notebook from the workshop I'm running at GDG DevFest Ireland 2026. Attendees build an image classifier in Google Colab using transfer learning on MobileNetV3Large with TensorFlow and Keras. It sorts brain MRI scans into the three classes in the dataset's brain folder: glioma, meningioma and a class labelled `brain_tumor`. The notebook then looks at the results with a confusion matrix, sample predictions and a Grad-CAM heatmap.
 
 This project is not a medical tool. It was written for teaching and must not be used to diagnose anyone or to make any healthcare decision.
 
